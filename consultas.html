@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Consultas - Care+</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #d9d9d9;
+        }
+
+        .header {
+            background-color: white;
+            padding: 15px 20px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #3457d5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .user-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #0a0a0a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .consulta-card {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .btn-status {
+            border-radius: 20px;
+            padding: 5px 15px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .btn-confirmada {
+            background: #8be29d;
+            color: black;
+        }
+
+        .btn-reagendar {
+            background: #7c7ce6;
+            color: white;
+        }
+
+        .btn-cancelar {
+            background: #b26bb2;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header com botão voltar + título + ícone -->
+    <div class="header">
+        <a href="index.html" class="btn btn-light" style="border-radius: 50%; font-size: 20px; padding: 6px 12px;">
+            ⬅
+        </a>
+
+        <span>Minhas Consultas</span>
+
+        <div class="user-icon">👤</div>
+    </div>
+
+    <!-- Área principal -->
+    <div class="container mt-4">
+
+        <!-- Calendário simples -->
+        <input id="calendario" type="date" class="form-control mb-4">
+
+        <!-- Consulta 1 -->
+        <div class="consulta-card">
+            <p class="fw-bold">24/10 - 10h<br>Clínica Vida</p>
+            <p>Presencial</p>
+            <button class="btn btn-status btn-confirmada">Confirmada</button>
+        </div>
+
+        <!-- Consulta 2 -->
+        <div class="consulta-card">
+            <p class="fw-bold">31/10 - 10h<br>Clínica Vida</p>
+            <p>Remota</p>
+            <button class="btn btn-status btn-reagendar">Reagendar</button>
+        </div>
+
+        <!-- Consulta 3 -->
+        <div class="consulta-card">
+            <p class="fw-bold">02/11 - 10h<br>Clínica Vida</p>
+            <p>Risco de No-show</p>
+            <button class="btn btn-status btn-cancelar">Cancelar</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
